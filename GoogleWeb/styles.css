@@ -6,6 +6,7 @@
 .logo-img {
     display: block; /* stacks on top, starts a new line and takes up the whole width */
     width: 300px;
+    margin-bottom: 20px;
 }
 
 .search-input {

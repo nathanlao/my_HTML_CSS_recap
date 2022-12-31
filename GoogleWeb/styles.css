@@ -4,12 +4,21 @@
 }
 
 .logo-img {
+    /* Center the content:
+        Three conditions:
+        1. display block to take control of horizontal space.
+        2. set width
+        3. margin-left/right to be auto: equally take up space */
     display: block; /* stacks on top, starts a new line and takes up the whole width */
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
 .search-input {
     display: block; /* display block stacks on top */
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }

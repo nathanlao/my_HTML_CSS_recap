@@ -1,4 +1,4 @@
-/* body: selector, color: properties, red: value */
+/* body: element selector, color: properties, red: value */
 body {
     background: #deb887;     /* red, blue, yellow, etc */
     color: #6495ed;        /* red, blue, yellow, etc */

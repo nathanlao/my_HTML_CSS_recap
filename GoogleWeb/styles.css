@@ -1,13 +1,14 @@
-div {
+/* .main -> class selecter */
+.main {
     margin-top: 100px;
 }
 
-img {
+.logo-img {
     display: block; /* stacks on top, starts a new line and takes up the whole width */
     width: 300px;
 }
 
-input {
+.search-input {
     display: block; /* display block stacks on top */
     width: 400px;
 }

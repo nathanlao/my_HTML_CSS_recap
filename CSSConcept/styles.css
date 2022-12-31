@@ -1,0 +1,9 @@
+/* body: selector, color: properties, red: value */
+body {
+    background: #deb887;     /* red, blue, yellow, etc */
+    color: #6495ed;        /* red, blue, yellow, etc */
+    font-size: 25px;        /* 0px - 100px and beyond */
+    font-weight: bold;   /* lighter, normal, bold  */
+    text-align: center;      /* left, center or right  */ 
+    margin-top: 40px;        /* From 0px and upwards   */
+}

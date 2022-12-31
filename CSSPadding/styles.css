@@ -1,0 +1,16 @@
+.card {
+    color: #222222;
+    background: lightgrey;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding: add space inside in between the content and the egde
+                of the container (div) */
+    /* padding: 20px */
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 0;
+    padding-left: 0;
+}

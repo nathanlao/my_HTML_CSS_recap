@@ -1,7 +1,6 @@
 /* .main -> class selecter */
 .main {
     margin-top: 100px;
-    text-align: center;
 }
 
 .logo-img {
@@ -32,10 +31,15 @@
     line-height: 24px;
 }
 
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: 4px;
+    margin-right: 4px;
     margin-top: 30px;
 
     padding-top: 8px;

@@ -3,6 +3,7 @@ body {
 }
 
 .card {
+    text-align: center;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -11,10 +12,13 @@ body {
     display: flex;
     /* Add horizontal space around the flex children */
     justify-content: space-around; 
+    color: #2b2839;
+    background: #ddebf8;
+    border-bottom: 7px solid #d8cefe;
 }
 
 .lightbulb-img {
-    width: 150px;
+    width: 180px;
 }
 
 /* utility class: A class for a single CSS property */

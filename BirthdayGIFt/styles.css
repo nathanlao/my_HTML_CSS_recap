@@ -3,9 +3,6 @@ body {
     font-family: 'Happy Monkey', cursive;
     background: #6b705c;
     color: #ffe8d6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h1, h2, h3, h4, p {
@@ -20,4 +17,13 @@ h1, h2, h3, h4, p {
 
 h2, h4 {
     background: #cb997e;
+}
+
+#header {
+    /* Turn everything into a row(flex direction by default is row) */
+    display: flex; 
+    /* Change to column: Stack elements on top */
+    flex-direction: column;
+    /* Control the main axis now (horizontal) */
+    align-items: center;
 }

@@ -9,7 +9,13 @@
     
     align-items: -> control the cross axis (vertical): value by default is stretch
     start, center, end
+
+
+    2. flex-direction: column
+    justify-content: -> cross axis (vertical)
+    align-items: -> main axis (horizontal)
     */
+
     display: flex;
     flex-direction: column; /* by default is row */
     justify-content: start;

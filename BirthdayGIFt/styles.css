@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+}
+
+#yoshi-img {
+    width: 150px;
+    border-radius: 50%;
+}

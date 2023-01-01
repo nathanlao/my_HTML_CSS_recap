@@ -2,6 +2,11 @@ body {
     margin: 20px;
 }
 
+.card {
+    border: 1px dotted blue;
+    padding: 20px;
+}
+
 .lightbulb-img {
     width: 150px;
 }

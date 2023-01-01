@@ -5,6 +5,7 @@ body {
 .card {
     border: 1px dotted blue;
     padding: 20px;
+    display: flex;
 }
 
 .lightbulb-img {

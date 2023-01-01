@@ -51,3 +51,9 @@
     border-radius: 4px;
     font-size: 14px;
 }
+
+.privacy-p {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

@@ -5,10 +5,14 @@
 
 body {
     color: white;
-    background-image: url("images/universe.png");
+    background-image: url("https://media.giphy.com/media/8YvxhbQoVYPSt7pB94/giphy-downsized-large.gif");
     background-size: cover;
     text-align: center;
     font-family: AntipastoPro;
+}
+
+#main-logo {
+    width: 150px;
 }
 
 .btn-join {
@@ -19,6 +23,7 @@ body {
     font-family: inherit;
 }
 
+/* (#): id selector */
 .underline {
     border-bottom: 3px solid white;
 }

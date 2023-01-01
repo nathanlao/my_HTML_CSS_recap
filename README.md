@@ -1,1 +1,11 @@
-# HTML && CSS
+# HTML & CSS
+
+## Google Clone
+<p align="center">
+<img width="640" alt="Screen Shot 2022-12-31 at 9 54 05 PM" src="https://user-images.githubusercontent.com/75557717/210162278-eeb4cd6b-aaf8-41f1-af56-245fa1063c52.png">
+</p>
+
+## Digital Card
+<p align="center">
+<img width="640" alt="card" src="https://user-images.githubusercontent.com/75557717/210162316-7c9e038f-bf94-47ff-874a-8a31216cc21c.gif">
+</p>

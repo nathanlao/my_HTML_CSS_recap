@@ -4,15 +4,24 @@
 }
 
 body {
+    margin: 0;
     color: #c9d1d5;
-    background-image: url("https://media.giphy.com/media/8YvxhbQoVYPSt7pB94/giphy-downsized-large.gif");
-    background-size: cover;
     text-align: center;
     font-family: AntipastoPro;
 }
 
+#hero {
+    background-image: url("https://media.giphy.com/media/8YvxhbQoVYPSt7pB94/giphy-downsized-large.gif");
+    background-size: cover;
+    padding: 10px 0 400px 0;
+}
+
 #main-logo {
     width: 150px;
+}
+
+.title {
+    text-shadow: 0 0 1px #c9d1d5;
 }
 
 .btn-join {
@@ -28,4 +37,11 @@ body {
 /* (#): id selector */
 .underline {
     border-bottom: 3px solid #c9d1d5;
+}
+
+h3 {
+    font-size: 30px;
+    color: #1e2239;
+    /*           ➡️   ⬇️  blur color */
+    text-shadow: -3px 4px 2px #c9d1d5;
 }

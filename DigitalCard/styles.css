@@ -3,8 +3,14 @@ body {
 }
 
 .card {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
+    /* flexbox by default are display block */
     display: flex;
+    /* Add horizontal space around the flex children */
+    justify-content: space-around; 
 }
 
 .lightbulb-img {

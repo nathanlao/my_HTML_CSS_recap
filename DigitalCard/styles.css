@@ -1,5 +1,8 @@
 body {
     margin: 20px;
+    /* web safe font */
+    /* Entire font stack */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card {

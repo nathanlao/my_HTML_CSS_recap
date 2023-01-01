@@ -52,8 +52,8 @@
     font-size: 14px;
 }
 
-.privacy-p {
+.privacy-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }

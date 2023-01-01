@@ -1,8 +1,11 @@
 body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
-    background: #84a59d;
-    color: #f7ede2;
+    background: #6b705c;
+    color: #ffe8d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3, h4, p {
@@ -12,5 +15,9 @@ h1, h2, h3, h4, p {
 #yoshi-img {
     width: 150px;
     border-radius: 50%;
-    border: 5px solid #f6bd60;
+    border: 5px solid #cb997e;
+}
+
+h2, h4 {
+    background: #cb997e;
 }

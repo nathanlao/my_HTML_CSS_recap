@@ -8,8 +8,7 @@ body {
 .card {
     text-align: center;
     width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 20px;
     /* flexbox by default are display block */
     display: flex;

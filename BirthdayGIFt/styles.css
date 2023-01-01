@@ -1,9 +1,16 @@
 body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
+    background: #84a59d;
+    color: #f7ede2;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0px 0px 1px #22223b;
 }
 
 #yoshi-img {
     width: 150px;
     border-radius: 50%;
+    border: 5px solid #f6bd60;
 }

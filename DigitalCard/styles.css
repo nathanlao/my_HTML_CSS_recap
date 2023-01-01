@@ -2,10 +2,10 @@ body {
     margin: 20px;
     /* web safe font */
     /* Entire font stack */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.card {
+.card{
     text-align: center;
     width: 400px;
     margin: 0 auto;
@@ -14,9 +14,16 @@ body {
     display: flex;
     /* Add horizontal space around the flex children */
     justify-content: space-around; 
-    color: #2b2839;
-    background: #ddebf8;
-    border-bottom: 7px solid #d8cefe;
+    color: #e0e1dd;
+    background: #415a77;
+    border-bottom: 7px solid #1b263b;
+    border-radius: 5px;
+    box-shadow: 10px 5px #1b263b;
+}
+
+.card:hover {
+    background: #2f3e46;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .lightbulb-img {
@@ -26,4 +33,32 @@ body {
 /* utility class: A class for a single CSS property */
 .border {
     border: 1px dotted blue;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
 }

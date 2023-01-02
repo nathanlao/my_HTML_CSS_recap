@@ -20,4 +20,7 @@
 <img width="480" alt="yoshi" src="https://user-images.githubusercontent.com/75557717/210196445-4a67f3b6-8c60-4a92-b190-f079880d4f7b.gif">
 </p>
 
-
+## SFU Homepage Clone
+<p align="center">
+<img width="480" alt="sfu" src="https://user-images.githubusercontent.com/75557717/210211156-e97e756d-abaf-4ef4-bdde-e6d99cd591af.gif">
+</p>

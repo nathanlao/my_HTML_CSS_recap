@@ -13,10 +13,21 @@ h1, h2, h3, h4, p {
     width: 150px;
     border-radius: 50%;
     border: 5px solid #cb997e;
+    margin-bottom: 10px;
 }
 
-h2, h4 {
+#bday-age {
     background: #cb997e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #cb997e;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 #header {

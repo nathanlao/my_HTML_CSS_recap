@@ -1,8 +1,36 @@
 body {
     margin: 0;
     text-align: center;
+    font-family: Poppins, sans-serif;
 }
 
 img {
     width: 100px;
+}
+
+#hero-section {
+    background-image: url("images/sfu.jpg");
+    background-size: cover;
+    padding: 80px 100px 160px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-title {
+    margin-bottom: 10px;
+    background: #a6192e;
+    color: #faf1f3;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#hero-intro {
+    margin: 0;
+    background: white;
+    color: #434244;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: 400;
 }

@@ -59,8 +59,13 @@ h1, h2, h3, h4, p {
     margin: 0 auto; 
     width: 550px;
     height: 400px;
+    padding-right: 10px;
     background-image: url("images/hello.png");
     background-size: cover;
     border: 6px solid #cb997e;
     border-radius: 10px;
+}
+
+.gift-img:hover {
+    background-image: url("images/happy.gif");
 }

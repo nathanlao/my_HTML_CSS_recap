@@ -29,6 +29,10 @@ h3 {
     color: #86bbbd;
 }
 
+p {
+    line-height: 23px;
+}
+
 /* layout */
 
 header, 
@@ -79,4 +83,35 @@ a {
 
 a:hover, a:active {
     color: #d4b44c;
+}
+
+.btn {
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block; /* a (links) are inline element hence can not set margin */
+    margin: 10px;
+}
+
+.btn-dark {
+    background: #5f506b;
+    color: whitesmoke;
+}
+
+.btn-mid {
+    background: #86bbbd;
+    color: #5f506b;
+}
+
+.btn-light {
+    background: whitesmoke;
+    color: #5f506b;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background: #f3e885;
+    color: #2b283a;
 }

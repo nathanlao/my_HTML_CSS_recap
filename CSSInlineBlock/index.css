@@ -1,0 +1,85 @@
+/* 
+Buttons vs links:
+
+buttons for actions that affect the web's front end or back end
+links for navigation to somewhere on the same page, within the site or elsewhere on the internet
+*/
+
+/*
+Block element:
+1. stack on top of each other
+2. div, p, h1 are all block
+3. Can set height and margin top and bottom
+
+
+Inline element: 
+1. sit side by side
+2. span, a are all inline
+3. Can not set height and margin top and bottom
+
+Inline-block element:
+1. sit side by side
+2. button, input are all inline-block
+3. Can set height and margin top and bottom
+
+*/
+
+body{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .45px
+}
+
+h2{
+    margin-top: 0;
+    font-size: 28px;
+    color: #d43435;
+}
+
+p{
+    font-size: 14px;
+    margin: 0;
+}
+
+button{
+    padding: 10px 19px;
+    border-radius: 4px;
+    background-color: #fff200;
+    background-color: gold;
+    font-size: 14px;
+    cursor: pointer;
+    color: #1d1e22;
+    border: none;
+    margin-top: 20px
+}
+
+a{  
+    display: inline-block;
+    padding: 10px 19px;
+    border-radius: 4px;
+    background-color: #fff200;
+    background-color: gold;
+    font-size: 14px;
+    cursor: pointer;
+    color: #1d1e22;
+    border: none;
+    margin-top: 20px;
+    text-decoration: none;
+} 
+
+.ad-container{
+    border: 1px solid darkgoldenrod;
+    padding: 20px 50px;
+    width: 560px;
+    height: 200px;
+    background-color: #1d1e22;
+    background-image: url('images/ferrari2.png');
+    background-repeat: no-repeat;
+    background-position: 0%;
+    margin: 50px auto;
+}
+
+.text-container{
+    width: 290px;
+    margin: 30px 0 0 310px;
+}

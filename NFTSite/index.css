@@ -7,8 +7,11 @@ body {
 
 /* typography */
 
-h1 {
+h1, h3 {
     margin: 0;
+}
+
+h1 {
     font-size: 36px;
     color: #5bc0be;
 }
@@ -22,24 +25,24 @@ h2 {
 }
 
 h3 {
-    margin: 0;
     font-size: 20px;
     color: #86bbbd;
 }
 
 /* layout */
 
-header {
+header, 
+section, 
+footer {
     padding: 45px 0;
-    background: #5f506b;
 }
 
-section {
-    padding: 45px 0;
+header, .section-two {
+    background: #5f506b;
 }
 
 .section-two {
-    background: #5f506b;
+    color: whitesmoke;
 }
 
 .container {
@@ -61,6 +64,12 @@ section {
     justify-content: space-between;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    color: #5f506b;
+}
+
 /* links */
 
 a {
@@ -68,10 +77,6 @@ a {
     text-decoration: underline dotted;
 }
 
-a:hover {
-    color: #d4b44c;
-}
-
-a:active {
+a:hover, a:active {
     color: #d4b44c;
 }

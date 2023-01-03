@@ -1,0 +1,107 @@
+/* 
+CSS specificity:
+CSS reads from top to bottom: lower selector beats the higher selectors
+
+Also CSS is based on points:
+1. element selector -> 1 point
+2. class selector -> 10 points
+3. id selector -> 100 points
+4. Compound selector -> element + class = 11 points
+
+
+Aside: a lot of developers dont use id selectors much for CSS (styling)
+       General style: use element selector
+       Everything else: class selector
+
+*/
+
+/* Compound selector -> Two selectors: 
+
+.ad-container a {
+    color:aqua;
+    font-size: 18px;
+}
+
+find me any anchor elements insude anything with class ad-container.
+Also will override properties in a if same propoerty is specified in 
+compound selector 
+*/
+
+
+body{
+    margin: 0;
+    color: #333;
+}
+
+section, .ad-container{
+    padding: 20px;
+}
+
+.ad-container{
+    border: 3px solid midnightblue;
+    border-radius: 4px;
+}
+
+.links-container{
+    padding: 20px;
+}
+
+h2, h4{
+    color: midnightblue;
+}
+
+h2{
+    margin: 0;
+}
+
+h4{
+    margin-bottom:0px
+}
+
+p{
+    font-size: 18px;
+    color: black;
+}
+
+.job-desc{
+    font-size: 20px;
+    color: green;
+}
+
+#job-desc{
+    font-size: 22px;
+    color: red;
+}
+
+ul{
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+button{
+    padding: 10px 19px;
+    color: midnightblue;
+    font-weight: bold;
+    background-color: skyblue;
+    border-radius: 4.6px;
+    border: 3px solid midnightblue;
+}
+
+a{
+    margin: 10px
+}
+
+.ad-container a {
+    color:aqua;
+    font-size: 18px;
+}
+
+.links-container a {
+    color: dodgerblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links-container a:hover {
+    color: fuchsia;
+}

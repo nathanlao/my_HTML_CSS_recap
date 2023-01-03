@@ -5,10 +5,7 @@ body {
     margin: 0;
 }
 
-header {
-    padding: 45px 0;
-    background: #5f29a3;
-}
+/* typography */
 
 h1 {
     margin: 0;
@@ -26,10 +23,38 @@ h3 {
     color: #d0aaff;
 }
 
+/* layout */
+
+
+header {
+    padding: 45px 0;
+    background: #5f29a3;
+}
+
 section {
     padding: 45px 0;
 }
 
+.container {
+    width: 620px;
+    margin: 0 auto;
+}
+
 .main-img {
     width: 100%;
+}   
+
+/* links */
+
+a {
+    color:#ef5839;
+    text-decoration: underline dotted;
+}
+
+a:hover {
+    color: #d4b44c;
+}
+
+a:active {
+    color: #d4b44c;
 }

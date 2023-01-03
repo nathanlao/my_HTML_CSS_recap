@@ -17,6 +17,10 @@ h2 {
     margin-top: 0;
 }
 
+.section-two-header {
+    color: #5bc0be;
+}
+
 h3 {
     margin: 0;
     font-size: 20px;
@@ -24,7 +28,6 @@ h3 {
 }
 
 /* layout */
-
 
 header {
     padding: 45px 0;
@@ -47,6 +50,16 @@ section {
 .main-img {
     width: 100%;
 }   
+
+.section-two-img {
+    width: 300px;
+    border-radius: 4.6px;
+}
+
+.section-two-img-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* links */
 

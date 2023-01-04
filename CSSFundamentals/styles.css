@@ -6,11 +6,29 @@ body {
     font-weight: 300;
 }
 
+img {
+    width: 150px;
+}
+
 .main {
     width: 570px;
     /* Testing purpose */
     border: 1px solid black;
     margin: 0 auto;
+}
+
+
+.bold-text {
+    display: block;
+    font-weight: 900;
+}
+
+h1 .bold-text {
+    font-size: 80px;
+}
+
+h2 .bold-text {
+    font-size: 60px;
 }
 
 h1, 
@@ -35,6 +53,13 @@ h3 {
     font-size: 16px;
 }
 
-img {
-    width: 150px;
+a {
+    color: #99D930;
+    font-weight: 900;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #131313;
 }

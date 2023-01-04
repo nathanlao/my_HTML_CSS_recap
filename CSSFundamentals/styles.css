@@ -64,20 +64,18 @@ a:focus {
     color: #131313;
 }
 
-.header-intro,
+header,
 .about-me,
 .projects {
     padding: 100px 0;
 }
 
-.header-intro {
-    background: #D7D7D7;
+.dark-background {
+    background: #2b2d42;
+    color: #edf2f4;
 }
 
 .about-me {
-    background: #ffeaea;
-}
-
-.projects {
-    background: #eaf9ff;
+    background: #edf2f4;
+    color: #2b2d42;
 }

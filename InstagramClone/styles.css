@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    /* padding: 20px 15px; */
+}
+
+.container {
+    /* Testing purpose */
+    /* border: 2px solid black; */
+
+    width:375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px 15px 17px;
+}
+
+#logo-img {
+    width: 127px;
+}
+
+#user-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}

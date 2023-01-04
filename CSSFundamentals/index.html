@@ -9,24 +9,35 @@
         <title>HTML & CSS Fundamentals</title>
     </head>
     <body>
-        <div class="main">
-            <h1>Hello, my name is <span class="bold-text">Nathan</span></h1>
-            <img alt="luigi" src="images/luigi.png">
-            <h2>I am major in <span class="bold-text">Computing Science</span></h2>
-            <p>I became interested in computer science during high school 
-                when I took my first programming course and was fascinated 
-                by the power of code to create and solve problems. 
-                Since then, I have pursued numerous opportunities to learn more about the field, 
-                I am excited to continue my studies and grow my knowledge and skills towards front end development. Happy coding :D</p>
-            
-            <h2>My most recent <span class="bold-text">project</span></h2>
-            <article>
-                <h3>Personalized NFT Website</h3>
-                <p class="article-author">Developed by Nathan on Jan 3, 2023</p>
-                <p>This web untilized some concepts in CSS such as using semantic HTML tags, 
-                    using flexbox to align images and 
-                    using inline-block to position link-style button...<a href="#">view here</a></p>    
-            </article>
-        </div>
+        <header class="header-intro">
+            <div class="container">
+                <h1>Hello, my name is <span class="bold-text">Nathan</span></h1>
+                <img alt="luigi" src="images/luigi.png">
+            </div>
+        </header>
+
+        <section class="about-me">
+            <div class="container">
+                <h2>I am majoring in <span class="bold-text">Computing Science</span></h2>
+                <p>I became interested in computer science during high school 
+                    when I took my first programming course and was fascinated 
+                    by the power of code to create and solve problems. 
+                    Since then, I have pursued numerous opportunities to learn more about the field, 
+                    I am excited to continue my studies and grow my knowledge and skills towards front end development. Happy coding :D</p>
+            </div>
+        </section>
+        
+        <section class="projects">
+            <div class="container">
+                <h2>My most recent <span class="bold-text">project</span></h2>
+                <article>
+                    <h3>Personalized NFT Website</h3>
+                    <p class="article-author">Developed by Nathan on Jan 3, 2023</p>
+                    <p>This web untilized some concepts in CSS such as using semantic HTML tags, 
+                        using flexbox to align images and 
+                        using inline-block to position link-style button...<a href="#">view here</a></p>    
+                </article>
+            </div>
+        </section>
     </body>
 </html>

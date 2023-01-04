@@ -10,10 +10,10 @@ img {
     width: 150px;
 }
 
-.main {
+.container {
     width: 570px;
     /* Testing purpose */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
 }
 
@@ -62,4 +62,22 @@ a:hover,
 a:active,
 a:focus {
     color: #131313;
+}
+
+.header-intro,
+.about-me,
+.projects {
+    padding: 100px 0;
+}
+
+.header-intro {
+    background: #D7D7D7;
+}
+
+.about-me {
+    background: #ffeaea;
+}
+
+.projects {
+    background: #eaf9ff;
 }

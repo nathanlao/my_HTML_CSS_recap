@@ -62,7 +62,7 @@ p {
 }
 
 a {
-    color: #99D930;
+    color: #f2cc8f;
     font-weight: 900;
 }
 
@@ -86,4 +86,21 @@ header,
 .about-me {
     background: #edf2f4;
     color: #2b2d42;
+}
+
+.see-my-work-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background: #f2cc8f;
+    color: #2b2d42;
+    text-decoration: none;
+}
+
+.see-my-work-btn:hover,
+.see-my-work-btn:active,
+.see-my-work-btn:focus {
+    background: #2b2d42;
+    color: #edf2f4;
 }

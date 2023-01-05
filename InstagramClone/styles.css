@@ -1,9 +1,21 @@
+@font-face {
+    src: url("Assets/HauraAuthenticDemoRegular.ttf");
+    font-family: HauraAuthenticDemoRegular;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
     width:375px;
     font-size: 13px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight:700
+}
+
+h1 {
+    margin: 0;
+    font-size: 35px;
+    font-family: 'HauraAuthenticDemoRegular', sans-serif;
 }
 
 /* header */
@@ -54,4 +66,44 @@ body {
 .location {
     font-size: 12px;
     font-weight: 400;
+}
+
+.post-img {
+    width: 375px;
+    height: 375px;
+}
+
+.icon-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin: 16px 10px 0;
+}
+
+.icon-img-heart {
+    width: 23px;
+}
+
+.icon-img {
+    width: 23px;
+}
+
+.icon-img-heart:hover,
+.icon-img:hover {
+    opacity: 0.4;
+}
+
+.post-likes {
+    margin: 11px 13px 0;
+}
+
+.post-comment {
+    margin: 0;
+    font-weight: 400;
+    padding: 12px 13px 16px;
+    border-bottom: 30px solid #EDEDED;
+}
+
+.comment-name {
+    font-weight: 700;
 }

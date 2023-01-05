@@ -30,10 +30,10 @@ const posts = [
 
 const sectionEl = document.getElementById("section")
 
-
-function renderPost(posts) {
+function renderPost() {
     let tempStr = ""
-    for (let i = 0; i < posts.length; i++ ) {
+    let i = 0
+    for (i = 0; i < posts.length; i++ ) {
         tempStr += `
         <div class="section-container">
             <img class="user-img" alt="avatar vangogh" src="${posts[i].avatar}"/>
@@ -44,15 +44,29 @@ function renderPost(posts) {
         </div>
         <img class="post-img" alt="user post" src="${posts[i].post}"/>
         <div class="icon-img-wrapper">
-            <img class="icon-img-heart" alt="icon heart" src="images/icon-heart.png"/>
+            <img class="icon-img-heart" id="icon-heart" onclick="addLikesToPage(${i})" alt="icon heart" src="images/icon-heart.png"/>
             <img class="icon-img" alt="ico comment" src="images/icon-comment.png"/>
             <img class="icon-img" alt="icon dm" src="images/icon-dm.png"/>
         </div>
-        <p class="post-likes">${posts[i].likes} likes</p>
+        <p class="post-likes" id="post-like-count">${posts[i].likes} likes</p>
         <p class="post-comment"><span class="comment-name">${posts[i].username}</span> ${posts[i].comment}</p>
         `
     }
     sectionEl.innerHTML += tempStr
 }
 
-renderPost(posts)
+// function addLikesToPage(i) {
+//     const heartEl = document.getElementById("icon-heart")
+//     const likesCountEl = document.getElementById("post-like-count")
+//     if (heartEl.src.match("images/icon-heart.png")) {
+//         heartEl.src = "images/icon-red-heart.png"
+//         posts[i].likes++
+//         likesCountEl.textContent = posts[i].likes + " likes"
+//     } else {
+//         heartEl.src = "images/icon-heart.png"
+//         posts[i].likes--
+//         likesCountEl.textContent = posts[i].likes + " likes"
+//     }
+// }
+
+renderPost()

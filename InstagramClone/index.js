@@ -52,7 +52,7 @@ function renderPost(posts) {
         <p class="post-comment"><span class="comment-name">${posts[i].username}</span> ${posts[i].comment}</p>
         `
     }
-    sectionEl.innerHTML = tempStr
+    sectionEl.innerHTML += tempStr
 }
 
 renderPost(posts)

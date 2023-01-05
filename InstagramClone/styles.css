@@ -9,7 +9,8 @@ body {
     width:375px;
     font-size: 13px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight:700
+    font-weight:700;
+    border: 1px solid #C6C6C6;
 }
 
 h1 {

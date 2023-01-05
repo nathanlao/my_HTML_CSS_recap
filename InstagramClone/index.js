@@ -52,21 +52,22 @@ function renderPost() {
         <p class="post-comment"><span class="comment-name">${posts[i].username}</span> ${posts[i].comment}</p>
         `
     }
-    sectionEl.innerHTML += tempStr
+    sectionEl.innerHTML = tempStr
 }
 
-// function addLikesToPage(i) {
-//     const heartEl = document.getElementById("icon-heart")
-//     const likesCountEl = document.getElementById("post-like-count")
-//     if (heartEl.src.match("images/icon-heart.png")) {
-//         heartEl.src = "images/icon-red-heart.png"
-//         posts[i].likes++
-//         likesCountEl.textContent = posts[i].likes + " likes"
-//     } else {
-//         heartEl.src = "images/icon-heart.png"
-//         posts[i].likes--
-//         likesCountEl.textContent = posts[i].likes + " likes"
-//     }
-// }
+function addLikesToPage(i) {
+    // console.log(i)
+    const heartEl = document.getElementById("icon-heart")
+    const likesCountEl = document.getElementById("post-like-count")
+    if (heartEl.src.match("images/icon-heart.png")) {
+        heartEl.src = "images/icon-red-heart.png"
+        posts[i].likes++
+        likesCountEl.textContent = posts[i].likes + " likes"
+    } else {
+        heartEl.src = "images/icon-heart.png"
+        posts[i].likes--
+        likesCountEl.textContent = posts[i].likes + " likes"
+    }
+}
 
 renderPost()

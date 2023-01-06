@@ -48,10 +48,19 @@ h1 {
 }
 
 .item-img {
+    /*  image is an inline-level element 
+    so browser adds some whitespace under the baseline 
+    to adjust other inline elements.
+    
+    Need to make it a block element  */
+    display: block;
     width: 100%;
 }
 
 .caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     margin: 0 25px;
 }
 
@@ -62,4 +71,21 @@ h1 {
     position: absolute;
     top:0;
     left:0;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background:#cd6858;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+
+    /*  Default behavior of the child element in a flexbox is 
+        vertically stretch to fill that containier */
+
+    /* margin: auto 0 auto 0; */
+
+    /*  Take control of an individual element alignment when it's inside a flexbox */
+    align-self: center;
 }

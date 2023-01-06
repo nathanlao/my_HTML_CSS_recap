@@ -89,3 +89,26 @@ button {
     /*  Take control of an individual element alignment when it's inside a flexbox */
     align-self: center;
 }
+
+.chatbox-bg {
+    background: #dda15e;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #999;
+
+    display: flex;
+
+    /* position the chatbox in a fixed postion */
+    position: fixed;
+    right:6px;
+    bottom: 6px;
+}
+
+.chatbox-img {
+    width: 50%;
+
+    /* center the bubble image inside the orange circle */
+    margin: auto;
+}

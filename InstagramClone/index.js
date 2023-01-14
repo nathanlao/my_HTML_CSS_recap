@@ -34,6 +34,13 @@ const posts = [
     }
 ]
 
+let postsArray = posts
+// Parse string to array from LS'
+if (JSON.parse(localStorage.getItem("myPost"))) {
+    postsArray = JSON.parse(localStorage.getItem("myPost"))
+    renderPost()
+}
+
 document.addEventListener('click', function(e) {
     if (e.target.dataset.like) {
         handleLikesClick(e.target.dataset.like)
@@ -41,7 +48,7 @@ document.addEventListener('click', function(e) {
 })
 
 function handleLikesClick(postId) {
-    const targetPostObj = posts.filter(function(post) {
+    const targetPostObj = postsArray.filter(function(post) {
         return post.id === postId
     })[0]
 
@@ -51,17 +58,18 @@ function handleLikesClick(postId) {
         targetPostObj.likes-- 
     }
     targetPostObj.isLiked = !targetPostObj.isLiked
+    saveToLocalStorage()
     renderPost()
 }
 
 function getPostHtml() {
     let post = ""
 
-    for (let i = 0; i < posts.length; i++ ) {
+    for (let i = 0; i < postsArray.length; i++ ) {
 
         // Conditionally render the like image
         let likeIconSrc = ''
-        if (posts[i].isLiked) {
+        if (postsArray[i].isLiked) {
             likeIconSrc = "images/icon-red-heart.png"
         } else {
             likeIconSrc = "images/icon-heart.png"
@@ -69,23 +77,27 @@ function getPostHtml() {
 
         post += `
         <div class="section-container">
-            <img class="user-img" alt="avatar vangogh" src="${posts[i].avatar}"/>
+            <img class="user-img" alt="avatar vangogh" src="${postsArray[i].avatar}"/>
             <div class="user-info-wrapper">
-                <p class="name">${posts[i].name}</p>
-                <p class="location">${posts[i].location}</p>
+                <p class="name">${postsArray[i].name}</p>
+                <p class="location">${postsArray[i].location}</p>
             </div>
         </div>
-        <img class="post-img" alt="user post" src="${posts[i].post}"/>
+        <img class="post-img" alt="user post" src="${postsArray[i].post}"/>
         <div class="icon-img-wrapper">
-            <img class="icon-img-heart" id="icon-heart" data-like="${posts[i].id}" alt="icon heart" src="${likeIconSrc}"/>
+            <img class="icon-img-heart" id="icon-heart" data-like="${postsArray[i].id}" alt="icon heart" src="${likeIconSrc}"/>
             <img class="icon-img" alt="ico comment" src="images/icon-comment.png"/>
             <img class="icon-img" alt="icon dm" src="images/icon-dm.png"/>
         </div>
-        <p class="post-likes" id="post-like-count">${posts[i].likes} likes</p>
-        <p class="post-comment"><span class="comment-name">${posts[i].username}</span> ${posts[i].comment}</p>
+        <p class="post-likes" id="post-like-count">${postsArray[i].likes} likes</p>
+        <p class="post-comment"><span class="comment-name">${postsArray[i].username}</span> ${postsArray[i].comment}</p>
         `
     }
     return post
+}
+
+function saveToLocalStorage() {
+    localStorage.setItem("myPost", JSON.stringify(postsArray))
 }
 
 function renderPost() {

@@ -75,6 +75,7 @@ h1 {
 }
 
 .icon-img-wrapper {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     width: 100px;
@@ -89,7 +90,6 @@ h1 {
     width: 23px;
 }
 
-.icon-img-heart:hover,
 .icon-img:hover {
     opacity: 0.4;
 }

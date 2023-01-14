@@ -6,7 +6,9 @@ const posts = [
         avatar: "images/avatar-1.jpg",
         post: "images/post-spiderman.jpg",
         comment: "just took a few mushrooms lol",
-        likes: 21
+        likes: 21,
+        isLiked:false,
+        id: '1'
     },
     {
         name: "Christian Bale",
@@ -15,7 +17,9 @@ const posts = [
         avatar: "images/avatar-2.jpg",
         post: "images/post-batman.jpg",
         comment: "i'm feelin a bit stressed tbh",
-        likes: 4
+        likes: 4,
+        isLiked:false,
+        id: '2'
     },
         {
         name: "Josh Brolin",
@@ -24,17 +28,46 @@ const posts = [
         avatar: "images/avatar-3.jpg",
         post: "images/post-thanos.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
-        likes: 152
+        likes: 152,
+        isLiked:false,
+        id: '3'
     }
 ]
 
-const sectionEl = document.getElementById("section")
+document.addEventListener('click', function(e) {
+    if (e.target.dataset.like) {
+        handleLikesClick(e.target.dataset.like)
+    }
+})
 
-function renderPost() {
-    let tempStr = ""
-    let i = 0
-    for (i = 0; i < posts.length; i++ ) {
-        tempStr += `
+function handleLikesClick(postId) {
+    const targetPostObj = posts.filter(function(post) {
+        return post.id === postId
+    })[0]
+
+    if (targetPostObj.isLiked === false) {
+        targetPostObj.likes++ 
+    } else {
+        targetPostObj.likes-- 
+    }
+    targetPostObj.isLiked = !targetPostObj.isLiked
+    renderPost()
+}
+
+function getPostHtml() {
+    let post = ""
+
+    for (let i = 0; i < posts.length; i++ ) {
+
+        // Conditionally render the like image
+        let likeIconSrc = ''
+        if (posts[i].isLiked) {
+            likeIconSrc = "images/icon-red-heart.png"
+        } else {
+            likeIconSrc = "images/icon-heart.png"
+        }
+
+        post += `
         <div class="section-container">
             <img class="user-img" alt="avatar vangogh" src="${posts[i].avatar}"/>
             <div class="user-info-wrapper">
@@ -44,7 +77,7 @@ function renderPost() {
         </div>
         <img class="post-img" alt="user post" src="${posts[i].post}"/>
         <div class="icon-img-wrapper">
-            <img class="icon-img-heart" id="icon-heart" onclick="addLikesToPage(${i})" alt="icon heart" src="images/icon-heart.png"/>
+            <img class="icon-img-heart" id="icon-heart" data-like="${posts[i].id}" alt="icon heart" src="${likeIconSrc}"/>
             <img class="icon-img" alt="ico comment" src="images/icon-comment.png"/>
             <img class="icon-img" alt="icon dm" src="images/icon-dm.png"/>
         </div>
@@ -52,22 +85,11 @@ function renderPost() {
         <p class="post-comment"><span class="comment-name">${posts[i].username}</span> ${posts[i].comment}</p>
         `
     }
-    sectionEl.innerHTML = tempStr
+    return post
 }
 
-function addLikesToPage(i) {
-    // console.log(i)
-    const heartEl = document.getElementById("icon-heart")
-    const likesCountEl = document.getElementById("post-like-count")
-    if (heartEl.src.match("images/icon-heart.png")) {
-        heartEl.src = "images/icon-red-heart.png"
-        posts[i].likes++
-        likesCountEl.textContent = posts[i].likes + " likes"
-    } else {
-        heartEl.src = "images/icon-heart.png"
-        posts[i].likes--
-        likesCountEl.textContent = posts[i].likes + " likes"
-    }
+function renderPost() {
+    document.getElementById("section").innerHTML = getPostHtml()
 }
 
 renderPost()

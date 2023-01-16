@@ -1,0 +1,50 @@
+/* 
+(*) -> universal selector
+select all elements
+apply box-sizing in one place
+ */
+
+*, *::before, *::after {
+    /* border-box forces any padding and borders into the 
+        element's total size instead of expanding it 
+    */
+
+    /* *::before, *::after
+        let you insert special content inside element as their first or last child in CSS
+        prevent any unexpected behaviours
+    */
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    background-color: #c5d8ea;
+    margin: 0;
+}
+
+.promo-card {
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+
+    background-color: white;
+    box-shadow: 0 2px 10px #8aa7c1;
+    border-radius: 8px;
+    margin: 2em auto 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #9a3412;
+    margin: 0 0 1em;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 0 0 1.5em;
+}

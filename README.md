@@ -35,5 +35,16 @@
 <img width="480" alt="porfolio" src="https://user-images.githubusercontent.com/75557717/210660449-c028da08-bb37-40ba-b058-91cb0afb101e.gif">
 </p>
 
+## Instagram Clone
+- Using JS to render posts
+- Using data attributes to identify each post 
+- Conditionally render post likes
+- Saving likes into localStorage
+
+<p align="center">
+<img width="480" alt="ig" src="https://user-images.githubusercontent.com/75557717/212461074-769c0534-f3ce-44ce-80f5-c131fd5ffa36.gif">
+</p>
+
+
 
 

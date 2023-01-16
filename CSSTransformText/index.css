@@ -1,0 +1,21 @@
+body {
+    color: #202945;
+    background-color: #faf9f6;
+    padding-top: 0.5em;
+}
+
+article {
+    width: 90%;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.headline {
+    line-height: 1.3;
+    /* faster way to capitalize first letter of each word in CSS*/
+    text-transform: capitalize;
+}
+
+p {
+    line-height: 1.5;
+}

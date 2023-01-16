@@ -1,0 +1,38 @@
+/* Flexbox in order: 
+    order default to 0 if not specified 
+
+    -1: display item first
+    1: display item last
+*/
+.coat {
+    order: 3;
+}
+
+.dish {
+    order: 1;
+}
+
+.tube {
+    order: 4;
+}
+
+.goggles {
+    order: 2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.item {
+    width: 50px;
+    font-size: 3.125rem;
+    padding: 0.25em;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border: 2px solid #0093E9;
+    border-radius: 3px;
+}
